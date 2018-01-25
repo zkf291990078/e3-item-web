@@ -14,11 +14,11 @@
 	
 	<context:component-scan base-package="cn.e3mall.item.controller" />
 	<mvc:annotation-driven />
-	<!-- <bean
+	 <bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/jsp/" />
 		<property name="suffix" value=".jsp" />
-	</bean> -->
+	</bean>
 	<!-- 引用dubbo服务 -->
 	<dubbo:application name="e3-item-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.128:2181"/>	
